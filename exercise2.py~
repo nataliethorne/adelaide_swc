@@ -1,0 +1,12 @@
+#Given an string (a sentence), find out how many unique letters A-Z it #contains, capital and lwoer case shouldnt be double-counted
+
+#'AaAa'
+
+#input: some string
+#input_string = 'some string here'
+#print (the number of unique letters in the string)
+
+import sys
+letters=''.join(sys.argv[1:]).upper()
+print len(set(letters))
+

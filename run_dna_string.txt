@@ -1,0 +1,4 @@
+import dna_string
+x = dna_string.DNAString("GATCC")
+x.gc_content()
+x.reverse_complement()

@@ -1,0 +1,33 @@
+import sys
+#print sys.argv
+
+# get list
+my_list = sys.argv
+my_list = my_list[1:len(my_list)]
+
+# sort the list
+
+my_list.sort()
+
+# join all the words except the last
+
+my_list_last=my_list[-1]
+
+my_len=len(my_list)
+my_list_firstpart=my_list[0:(my_len-1)]
+joined_list=', '.join(my_list_firstpart)
+
+# capitalise the first letter
+
+joined_list=joined_list.capitalize()
+
+
+# append the word "and" and the last word
+
+
+joined_list += ' and '
+joined_list += my_list_last
+joined_list += "."
+
+print joined_list
+
