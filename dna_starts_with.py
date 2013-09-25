@@ -1,3 +1,7 @@
+class UnknownBaseException(Exception)
+    pass
+
+
 # start with the function you want to test
 def dna_starts_with(st1,st2):
     '''
@@ -30,10 +34,24 @@ def dna_starts_with(st1,st2):
         raise Exception("string 2 is longer than string 1")
 
     if 'N' in st1:
-        raise Exception("Contains invalid bases")
+        raise UnknownBaseException()
     return st1[0:len(st2)]==st2
 
-# in order for doctests
+    try:
+        dna_starts_with('N','a')
+    except UnknownBaseException as e: print "contains N"
+
+
+# in order for doctests to work
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+
+
+# dir() to look at methods for a function
+# IOError() to see what functions it works for
+
+# for exceptions better to use try: and except IOError as e: print "wrong"
+
+# can create our own exception class
+
