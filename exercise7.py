@@ -5,7 +5,9 @@
 #count of Ns
 #GC content
 
+# import file called sys.py
 import sys
+# get the second argument from the command line ( the first will be the file exercise7.py )
 f_name=str(sys.argv[1])
 
 def get_Ns_GC(filename):

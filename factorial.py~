@@ -1,5 +1,5 @@
 
-from factorial import factorial
+#from factorial import factorial
 
 def factorial(n):
     import math

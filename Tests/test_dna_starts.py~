@@ -14,7 +14,7 @@ def test_dna_starts_with_single_base_pair():
 
 def test_dna_is_shorter_than_query():
     dna='gtca'
-    assert dna_starts_with(dna,'tgcggta')
+    assert not dna_starts_with(dna,"gtcat")
 
 # now implement the tests
 test_dna_starts_with_itself()

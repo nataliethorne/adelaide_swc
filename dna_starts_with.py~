@@ -4,10 +4,10 @@ def dna_starts_with(st1,st2):
     Input a dna string see if it starts with string 2.
 
     >>> dna_starts_with('actgt','actgt')
-    'actgt'
+    True
 
     >>> dna_starts_with('a','a')
-    'a'
+    True
 
     >>> try: dna_starts_with('ANT', 'A')
     ... except Exception as e: print e
